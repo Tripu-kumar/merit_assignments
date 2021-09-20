@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class='checkbtn'>
+            <span>&#9776;</span>
+        </label>
+     <label class="logo">Train Ticket Booking</label>
+     <ul>
+         <li><a href="home.html">home</a></li>
+         <li><a href="Irctc_complete/Irctc.html">Freight Business Portal</a></li>
+        
+         <li><a href="pnr.html">PNR status</a></li>
+         <li><a href="con-example.html">contact us</a></li>
+         <li><a id="id" href="login.html">Sign in</a></li>
+     </ul>
+    </nav>
+    <div class="section-1">
+        
+        <div class="section-1-part-1">
+            <form>
+     <ul>
+         <li><span class="book_label">FROM</span>
+            <input class="input_station" type="text" list="station"  placeholder="&#10148;" required/>
+              <datalist id="station">
+                  <option>NEW DELHI - NDLS</option>
+                  <option>MGR CHENNAI CTL - MAS</option>
+                  <option>HOWRAH JN - HWH</option>
+                  <option>SECUNDERABAD JN - SC</option>
+                  <option>PUNE JN - PUNE</option>
+                  <option>CHENNAI EGMORE - MS</option>
+                  <option>MUMBAI CENTRAL - MMCT</option>
+                  <option>DELHI - DLI</option>
+                  <option>MADURAI JN - MDU</option>
+                  <option>TIRUCHCHIRAPALI - TPJ</option>
+              </datalist>
+          </li>
+         <li><span class="book_label">TO</span>
+            <input class="input_station" type="text" list="station"  placeholder="&#10162;" required/>
+              <datalist id="station">
+                  <option>NEW DELHI - NDLS</option>
+                  <option>MGR CHENNAI CTL - MAS</option>
+                  <option>HOWRAH JN - HWH</option>
+                  <option>SECUNDERABAD JN - SC</option>
+                  <option>PUNE JN - PUNE</option>
+                  <option>CHENNAI EGMORE - MS</option>
+                  <option>MUMBAI CENTRAL - MMCT</option>
+                  <option>DELHI - DLI</option>
+                  <option>MADURAI JN - MDU</option>
+                  <option>TIRUCHCHIRAPALI - TPJ</option>
+              </datalist>
+          </li>
+         <li><span class="book_label">DATE</span>
+            <input class="input_station" type="date"   placeholder="&#10148;" required/></li>
+            <li><span class="book_label">ALL CLASSES</span>
+                <input class="input_station" type="text" list="station"  placeholder="&#9783;" required/>
+                  <datalist id="station">
+                    <option>Anubhuti Class (EA)</option>
+                    <option>AC First Class (1A)</option>
+                    <option>Exec. Chair Car (EC)</option>
+                    <option>AC 2 Tier (2A)</option>
+                    <option>First Class (FC)</option>
+                    <option>AC 3 Tier (3A)</option>
+                    <option>Sleeper (SL)</option>
+                    <option>Second Sitting (2S)</option>
+                  </datalist>
+              </li>
+              <li><span class="book_label">GENERAL</span>
+                <input class="input_station" type="text" list="station"  placeholder="&#9745;" required/>
+                  <datalist id="station">
+                    <option>GENERAL</option>
+                    <option>TATKAL</option>
+                    <option>PREMIUM TATKAL</option>
+                    <option>LOWER BERTH/SR.CITIZEN</option>
+                    <option>DIVYAANG</option>
+                    <option>LADIES</option>
+                    
+                  </datalist>
+              </li>
+              <li><button class="b">MODIFY SEARCH</button></li>
+     </ul>
+    </form>
+     <!-- <center> -->
+     
+    <!-- </center> -->
+    </div>
+     <div class="section-1-part-2">
+         <div>
+     <input  type="checkbox" id="ch-1"/>
+     <label  for ="ch-1" class="check-label">Flexible With Date</label>    
+    </div>
+    <div>
+    
+      <input  type="checkbox" id="ch-2"/>
+     <label  for ="ch-2" class="check-label">Train With Available Berth</label>    
+    </div>
+     <div>
+     <input  type="checkbox" id="ch-3"/>
+     <label  for ="ch-3" class="check-label">Divyaang Concession</label>    
+    </div>
+     <div>
+  
+     <input  type="checkbox" id="ch-4"/>
+     <label  for ="ch-4" class="check-label">Railway Pass Concession</label>    
+    </div>
+    </div>
+    </div>
+    <br>
+  
+    <div class="section-2">
+       
+       <div class="section-2-part-1">
+        <div>
+            <button  class="top-buttons">&#x3c; Previous Day</button>
+            <button  class="top-buttons">Next Day &#x3e;</button>
+        </div>
+           <div>
+               <select name="journey-class" id="class-journey">
+                   <option selected disabled>JOURNEY CLASS</option>
+                   <option>AC 2 TIER (2A)</option>
+                   <option>AC 3 TIER (3A)</option>
+                   <option>Second Sitting (2S)</option>
+                   <option>Sleeper (SL)</option>
+               </select>
+           </div>
+           <div>
+            <select name="Train-Type" id="Train-Type">
+                <option selected disabled>TRAIN-TYPE</option>
+                <option>SPECIAL</option>
+                <option>SPECIAL TATKAL</option>
+                
+            </select>
+        </div>
+        <div>
+            <select name="DEPARTURE TIME" id="DEPARTURE TIME">
+                <option selected disabled>DEPARTURE TIME</option>
+                <option>EARLY MORNING(0-6)</option>
+                <option>MORNING(6-12)</option>
+                <option>MID DAY(12-18)</option>
+                <option>NIGHT(18-24)</option>
+            </select>
+        </div>
+        <div>
+            <select name="journey-class" id="class-journey">
+                <option selected disabled>ARRIVAL TIME</option>
+                <option>EARLY MORNING(0-6)</option>
+                <option>MORNING(6-12)</option>
+                <option>MID DAY(12-18)</option>
+                <option>NIGHT(18-24)</option>
+            </select>
+        </div>
+        <!-- <div class="in-range">
+            <label for="D">Duration of travel</label>
+            <input type="range" name="Duration" id="D" >
+        </div> -->
+        <div>
+            <img src="Assest/download (9).jpg" alt="">
+        </div>
+        <div>
+            <img src="Assest/images (5).jpg" alt="">
+        </div>
+        <div>
+            <img src="Assest/images (6).jpg" alt="">
+        </div>
+        </div>
+       <div class="section-2-part-2">
+           
+            
+               <div>
+                <div><h3>MAS LTT EXPRESS (02164)</h3>
+             <h4>18:25 | MGR CHENNAI CTL | Mon, 02 Aug16:4511:10 | PUNE JN | Tue, 03 Aug</h4>
+             <div class="class-berth">
+                 <div>Second Sitting (2S)
+                     TRAIN DEPARTED₹ 310</div>
+                     <div>Sleeper (SL)
+                         TRAIN DEPARTED₹ 640</div>
+                         <div>AC 3 Tier (3A)
+                             TRAIN DEPARTED₹ 1655</div>
+                             <div>AC 2 Tier (2A)
+                                 TRAIN DEPARTED₹ 2245</div>
+             </div>
+             </div>
+             <div class="but">
+                <button><a href="pass (1).html">Book Now</a></button>
+             <button>Details</button>
+         </div>
+            </div>
+            <div>
+                <div><h3>MAS LTT EXPRESS (02164)</h3>
+             <h4>18:25 | MGR CHENNAI CTL | Mon, 02 Aug16:4511:10 | PUNE JN | Tue, 03 Aug</h4>
+             <div class="class-berth">
+                 <div>Second Sitting (2S)
+                     TRAIN DEPARTED₹ 310</div>
+                     <div>Sleeper (SL)
+                         TRAIN DEPARTED₹ 640</div>
+                         <div>AC 3 Tier (3A)
+                             TRAIN DEPARTED₹ 1655</div>
+                             <div>AC 2 Tier (2A)
+                                 TRAIN DEPARTED₹ 2245</div>
+             </div>
+             </div>
+             <div class="but">
+                <button><a href="pass (1).html">Book Now</a></button>
+             <button>Details</button>
+         </div>
+            </div>
+            <div>
+                <div><h3>MAS LTT EXPRESS (02164)</h3>
+             <h4>18:25 | MGR CHENNAI CTL | Mon, 02 Aug16:4511:10 | PUNE JN | Tue, 03 Aug</h4>
+             <div class="class-berth">
+                 <div>Second Sitting (2S)
+                     TRAIN DEPARTED₹ 310</div>
+                     <div>Sleeper (SL)
+                         TRAIN DEPARTED₹ 640</div>
+                         <div>AC 3 Tier (3A)
+                             TRAIN DEPARTED₹ 1655</div>
+                             <div>AC 2 Tier (2A)
+                                 TRAIN DEPARTED₹ 2245</div>
+             </div>
+             </div>
+             <div class="but">
+                <button><a href="pass (1).html">Book Now</a></button>
+             <button>Details</button>
+         </div>
+            </div>
+              
+           
+        </div>
+    </div>
+    <br>
+    <footer>
+        <div class="footer-header">
+    <h4>Get Connected with us on social networks</h4>
+               <div> 
+               <i class="fab fa-facebook-f facebook"></i>
+        <i class="fab fa-youtube youtube"></i>
+        <i class="fab fa-instagram insta"></i>
+        <i class="fab fa-linkedin-in link"></i>
+        <i class="fab fa-telegram tele"></i>
+        <i class="fab fa-pinterest pin"></i>
+        <i class="fab fa-tumblr tum"></i>
+        <i class="fab fa-twitter twitter"></i>
+    </div>
+    </div>
+
+    <div class="footer-footer">
+        <div>© Copyright Train Ticket Booking 2022 Site | Terms of Use | Privacy Policy</div>
+    </div>
+  </footer>
+</body>
+</html>

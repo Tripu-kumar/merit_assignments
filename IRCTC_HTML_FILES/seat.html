@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="web1.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    </head>
+    <body>
+ <div class="topnav" id="myTopnav">
+
+    <a href="C:/Users/merit/Desktop/IRCTC_HTML_FILES/pnr.html">PNR Enquiry</a>
+    <a href="C:/Users/merit/Desktop/IRCTC_HTML_FILES/reserved.html">Reserved Train Between Stations</a>
+    <a href="C:/Users/merit/Desktop/IRCTC_HTML_FILES/seat.html">Seat Availability</a>
+    
+    <a href="C:/Users/merit/Desktop/IRCTC_HTML_FILES/fair.html">Fare Enquiry</a>
+  <a href="C:/Users/merit/Desktop/IRCTC_HTML_FILES/schedule.html">Reserved Train Schedule</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+    
+    <div style="padding:30px; margin:30px; text-align: center;">
+        <i class="fa fa-train" style="font-size:48; color:#012443;"></i>
+        <h1 class="head">PASSENGER RESERVATION ENQUIRY</h1>
+      </div>
+      <div class= "all" style="text-align:center; height: 100%;">
+      <div style="overflow:auto">
+        <div class="menu">
+          <a class="s" href="#">Services</a>
+          <a class="s" href="#">information</a>
+        </div>
+        <div class="main">
+          
+          <h2 class="bar">Accommodation Availability Enquiry On Trains Till Departure</h2>
+          <div class="all2">
+          <form class="f1">
+              <div class="revf">
+              <label class="l1" >Enter Train Number</label>
+              <input type="text" placeholder="Enter Train No."></input></div>
+              <div class="revf" >
+                <label class="l1">Enter Journey Date</label>
+                <input type="date" placeholder="Enter Journey Date"></input></div>
+                <div class="revf">
+                <label class="l1">Enter Source Station</label>
+                <input type="input" placeholder="Enter Source Station"></input></div>
+               <div class="revf">
+                <label class="l1">Enter Destination Station</label>
+               <input type="text" placeholder="Enter Destination Station "></input></div>
+               <div class="revf">
+                <label class="l1">Enter Class</label>
+                <select name="cars" class="cars" Placeholder="Enter Class">
+                    <option value="First AC">First Ac</option>
+                    <option value="First class">First Class</option>
+                    <option value="Executive class">Executive class </option>
+                    <option value="Sleeper class">sleeper class</option>
+                  </select></div>
+                  <div class="revf">
+                    <label class="l1">Enter Quota</label>
+                    <select  class="cars" Placeholder="Enter Quota">
+                        <option value="First AC">Tatkal Quota</option>
+                        <option value="First class">Ladies Quota</option>
+                        <option value="Executive class">Lower berth Quota</option>
+                        <option value="Sleeper class">General Quota</option>
+                      </select></div>
+               
+               <div style=" margin-left:20px; margin-top:20px ; ">
+              <button>Get Availability</button>
+              </div>
+          </form></div>
+        </div>
+          <div class="footer">© Copyright Train Ticket Booking 2021 Site | terms of use | Privacy  policy </div>
+        </div>
+        </div>
+    </body>
+</html>
